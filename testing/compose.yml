@@ -1,0 +1,22 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+    - 25565:25565
+    environment:
+      - EURA: "TRUE"
+      - SERVER_NAME: "どな鯖testing"
+      - TYPE: NEOFORGE
+      - NEOFORGE_VERSION: 21.1.213
+      - VERSION: "1.20.1"
+      - DIFFICULTY: "hard"
+      - MODE: "servival"
+      - MAX_PLAYERS: 30
+      - ENABLE_COMMAND_BLOCK: false
+      - FORCE_GAMEMODE: true
+
+      - RCON_PASSWORD: "testing"
+    volumes:
+    - ./minecraft-data:/data:Z
