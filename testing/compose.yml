@@ -4,19 +4,29 @@ services:
     tty: true
     stdin_open: true
     ports:
-    - 25565:25565
+    - "127.0.0.1:25565:25565"
     environment:
-      - EURA: "TRUE"
-      - SERVER_NAME: "どな鯖testing"
-      - TYPE: NEOFORGE
-      - NEOFORGE_VERSION: 21.1.213
-      - VERSION: "1.20.1"
-      - DIFFICULTY: "hard"
-      - MODE: "servival"
-      - MAX_PLAYERS: 30
-      - ENABLE_COMMAND_BLOCK: false
-      - FORCE_GAMEMODE: true
+      EULA: "TRUE"
+      SERVER_NAME: "どな鯖testing"
+      TYPE: NEOFORGE
+      NEOFORGE_VERSION: 21.1.213
+      VERSION: "1.21.1"
+      DIFFICULTY: "hard"
+      MODE: survival
+      MAX_PLAYERS: 30
+      ENABLE_COMMAND_BLOCK: false
+      FORCE_GAMEMODE: true
 
-      - RCON_PASSWORD: "testing"
+      RCON_PASSWORD: "testing"
     volumes:
     - ./minecraft-data:/data:Z
+    networks:
+     server:
+      ipv4_address: 172.30.0.2
+
+networks:
+  server:
+    ipam:
+      driver: default
+      config:
+       - subnet: 172.30.0.0/24
