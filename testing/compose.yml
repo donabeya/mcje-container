@@ -4,7 +4,7 @@ services:
     tty: true
     stdin_open: true
     ports:
-    - "127.0.0.1:25565:25565"
+      - "127.0.0.1:25565:25565"
     environment:
       EULA: "TRUE"
       SERVER_NAME: "どな鯖testing"
@@ -19,14 +19,14 @@ services:
 
       RCON_PASSWORD: "testing"
     volumes:
-    - ./minecraft-data:/data:Z
+      - ./minecraft-data:/data:Z
     networks:
-     server:
-      ipv4_address: 172.30.0.2
+      server:
+        ipv4_address: 172.30.0.2
 
 networks:
   server:
     ipam:
       driver: default
       config:
-       - subnet: 172.30.0.0/24
+        - subnet: 172.30.0.0/24
