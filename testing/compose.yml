@@ -17,6 +17,8 @@ services:
       ENABLE_COMMAND_BLOCK: false
       FORCE_GAMEMODE: true
 
+      PACKWIZ_URL: https://packwiz.io
+
       RCON_PASSWORD: "testing"
     volumes:
       - ./minecraft-data:/data:Z
@@ -26,6 +28,7 @@ services:
 
 networks:
   server:
+    driver: bridge
     ipam:
       driver: default
       config:
