@@ -11,7 +11,7 @@ podman compose up -d
 
 # システム
 
-[構成図](/image/minecraft.svg)
+![構成図](/image/minecraft.svg)
 
 # Author
 
