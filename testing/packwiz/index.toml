@@ -1,2 +1,6 @@
 hash-format = "sha256"
-files = []
+
+[[files]]
+file = "mods/durability-tweaks.pw.toml"
+hash = "912bfad02fb679b5de3fbc77446e8f26abd5e6fb91ddf6928e5923bffa391c13"
+metafile = true

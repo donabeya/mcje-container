@@ -16,9 +16,7 @@ services:
       MAX_PLAYERS: 30
       ENABLE_COMMAND_BLOCK: false
       FORCE_GAMEMODE: true
-
-      PACKWIZ_URL: https://packwiz.io
-
+      # PACKWIZ_URL: https://packwiz.io
       RCON_PASSWORD: "testing"
     volumes:
       - ./minecraft-data:/data:Z
