@@ -1,0 +1,13 @@
+name = "Durability Tweaks (RPG Tweaks)"
+filename = "durability_tweaks-neoforge-1.0.2.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/HWQeS7qe/versions/yYAtWUuc/durability_tweaks-neoforge-1.0.2.jar"
+hash-format = "sha512"
+hash = "0eeefd75603b6e92538e246589de1b23ff5911ae1f0b94e8538c1459ce566b0c599b54bb5a8df9c5e52151db5fedae427c2e90519aa1aaade70c948ce8499401"
+
+[update]
+[update.modrinth]
+mod-id = "HWQeS7qe"
+version = "yYAtWUuc"
