@@ -1,4 +1,4 @@
-name = "donabeya"
+name = "Packwiz"
 author = "donabe8898"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "d88c19e8eff399286d09a836b44eb95db129864964b9f35d5e5cea17b64137d8"
+hash = "c1c589457493e0e42b443e2975d2b09c6b01b656681345bca54fbacc432d42c8"
 
 [versions]
 minecraft = "1.21.1"
