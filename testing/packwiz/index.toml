@@ -1,0 +1,126 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/applied-energistics-2.pw.toml"
+hash = "afa4f499d946514c51f41f8f2202ac0946052b012570a210ebb31f0d0d627672"
+metafile = true
+
+[[files]]
+file = "mods/beltborne-lanterns.pw.toml"
+hash = "7bc3f592bdca4665cb48ae73c20b891cb272747c64aa5f63e8a93ed1a044d1f5"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+hash = "86cf2ae835b8f3d981af2e88a4d19fdc3dc4f5aa3904c6ba30e25d77d3e9fcbb"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
+metafile = true
+
+[[files]]
+file = "mods/copycats.pw.toml"
+hash = "e8562dd1a88ce84401100e45dbe9edcb8a04b67922718832acb1d1cc6e759b65"
+metafile = true
+
+[[files]]
+file = "mods/crafttweaker.pw.toml"
+hash = "335409591f36ee18e8435cf154aff6978fcb7222a0c47a3880065733ba79bc4a"
+metafile = true
+
+[[files]]
+file = "mods/create-escalated.pw.toml"
+hash = "cde4872a58b202f6773581f2e0de7d3f62850aca7a077adf162a5e25724b55cc"
+metafile = true
+
+[[files]]
+file = "mods/create-jetpack.pw.toml"
+hash = "3f6a414a28eb5796fcb963531cada1716e4054acc6b4fa05b08341fc6df0c202"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "462bf1560d05ef3b0573deb1a9024bd415ddd7471c7d5409825d12bbd0bfbcfc"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+metafile = true
+
+[[files]]
+file = "mods/durability-tweaks.pw.toml"
+hash = "912bfad02fb679b5de3fbc77446e8f26abd5e6fb91ddf6928e5923bffa391c13"
+metafile = true
+
+[[files]]
+file = "mods/elytra-slot.pw.toml"
+hash = "32078c39569bbb4b33d2d86a09cfc18a9f5b63a11d0ba2b186fd07341e422c92"
+metafile = true
+
+[[files]]
+file = "mods/elytras-disabled.pw.toml"
+hash = "1d0631fcb492d7f5e5172b2ef67152ca630b4605979af34e6e6f85fc80c53e41"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "f407238ae37effcd669f828b80a7246e805bc099b4848cd550b1d2d428fea78b"
+metafile = true
+
+[[files]]
+file = "mods/framework.pw.toml"
+hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
+metafile = true
+
+[[files]]
+file = "mods/guideme.pw.toml"
+hash = "5bc0953394cdd5a21d9f9c5a89dfa62ff84e43fc6a19fc5afdb7834e152386b9"
+metafile = true
+
+[[files]]
+file = "mods/immersive-aircraft.pw.toml"
+hash = "e01a9920aa95f8bcea40bf8e56eb4fbc43b9f554375fd58d86537d3b7e19c943"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "7fbe3225c134e823a07f3aecedace39fe866f327671ecca928f134399b94008d"
+metafile = true
+
+[[files]]
+file = "mods/lightmans-currency.pw.toml"
+hash = "eb3175fcc5de991d2d662847d86e0fc9bf1feae55a6ba0f760d24891a0f59130"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-additions.pw.toml"
+hash = "2581c158a3335ec178acac32452224f0b5ae371001d99bd7757827f470abef50"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-generators.pw.toml"
+hash = "a04147d9f39521c236191f913ac7fd8f177cc3ae073d5cb01be52bcede9acab2"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-tools.pw.toml"
+hash = "cf382b0b1ea1f25c133779b6ea340a5953dec3272bfaef17b6b499b4e59cc515"
+metafile = true
+
+[[files]]
+file = "mods/mekanism.pw.toml"
+hash = "2fee21be9505fb8a1a199aa5dc7a5d6a0687e86c08951fe396afd5dcfdb0ac45"
+metafile = true
+
+[[files]]
+file = "mods/refurbished-furniture.pw.toml"
+hash = "b1e0e7bf562eb6a1eb939835c19bbc56c46d209eeba8f2b766c0ad39676a389a"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "97658372a06b324c2121668e350cd27b02428db882f7f4943182aeef3f4cca75"
+metafile = true
