@@ -6,6 +6,11 @@ hash = "afa4f499d946514c51f41f8f2202ac0946052b012570a210ebb31f0d0d627672"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
+metafile = true
+
+[[files]]
 file = "mods/beltborne-lanterns.pw.toml"
 hash = "7bc3f592bdca4665cb48ae73c20b891cb272747c64aa5f63e8a93ed1a044d1f5"
 metafile = true
@@ -16,13 +21,18 @@ hash = "86cf2ae835b8f3d981af2e88a4d19fdc3dc4f5aa3904c6ba30e25d77d3e9fcbb"
 metafile = true
 
 [[files]]
+file = "mods/camera-mod.pw.toml"
+hash = "c05be737eb2e1fc7e611694f1295f070fc7fd1088cfae396aa1d3c884fc9f38e"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
 metafile = true
 
 [[files]]
 file = "mods/copycats.pw.toml"
-hash = "e8562dd1a88ce84401100e45dbe9edcb8a04b67922718832acb1d1cc6e759b65"
+hash = "bf463928645c586cb57a4e02533ee300af3931cf9db9233dae7efc1826643d41"
 metafile = true
 
 [[files]]
@@ -31,23 +41,33 @@ hash = "335409591f36ee18e8435cf154aff6978fcb7222a0c47a3880065733ba79bc4a"
 metafile = true
 
 [[files]]
-file = "mods/create-escalated.pw.toml"
-hash = "cde4872a58b202f6773581f2e0de7d3f62850aca7a077adf162a5e25724b55cc"
+file = "mods/create-jetpack.pw.toml"
+hash = "1d8fce350ce2671f24579691c47bc178ee7b644751ecec5f068427058de0cd2b"
 metafile = true
 
 [[files]]
-file = "mods/create-jetpack.pw.toml"
-hash = "3f6a414a28eb5796fcb963531cada1716e4054acc6b4fa05b08341fc6df0c202"
+file = "mods/create-railways-navigator.pw.toml"
+hash = "36ca424432226ba50961b9a9a9e8a9b97e3a76763c9d82ce7c5492b0822cefc0"
+metafile = true
+
+[[files]]
+file = "mods/create-trainutilities.pw.toml"
+hash = "70f4abe6b7351bab4fa130e15eac677e01a87ac4ab0348150590227de8343884"
 metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "462bf1560d05ef3b0573deb1a9024bd415ddd7471c7d5409825d12bbd0bfbcfc"
+hash = "f36d13fe08a755712437ae38d4a339af7a73003152a8d3638984a11964fd83ae"
 metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+metafile = true
+
+[[files]]
+file = "mods/dragonlib.pw.toml"
+hash = "7f37f1846f25e9c4e9297ba1e06fe81584145f466eb5b3e45940717b0aeb3bbb"
 metafile = true
 
 [[files]]
@@ -61,13 +81,18 @@ hash = "1d0631fcb492d7f5e5172b2ef67152ca630b4605979af34e6e6f85fc80c53e41"
 metafile = true
 
 [[files]]
+file = "mods/escalated.pw.toml"
+hash = "e79856a2e2cee31d7d0c9476b87a7f3fa99ed05c863b3372dc12171cc2b6bdfd"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "f407238ae37effcd669f828b80a7246e805bc099b4848cd550b1d2d428fea78b"
+hash = "44abae510395f12f9ea97b8296b2f72e25f18b9f3f2cc0ee42c0d9afd73fe0b3"
 metafile = true
 
 [[files]]
 file = "mods/framework.pw.toml"
-hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
+hash = "3944c175d3409b2db40630cdc0be1cad181009cc3c20c925328cb9b04bea0108"
 metafile = true
 
 [[files]]
@@ -81,13 +106,8 @@ hash = "e01a9920aa95f8bcea40bf8e56eb4fbc43b9f554375fd58d86537d3b7e19c943"
 metafile = true
 
 [[files]]
-file = "mods/kotlin-for-forge.pw.toml"
-hash = "7fbe3225c134e823a07f3aecedace39fe866f327671ecca928f134399b94008d"
-metafile = true
-
-[[files]]
 file = "mods/lightmans-currency.pw.toml"
-hash = "eb3175fcc5de991d2d662847d86e0fc9bf1feae55a6ba0f760d24891a0f59130"
+hash = "00beec97b7f607daeaec1f8596fccfcd845a6a6d922a12275e9055eb9d69e0cf"
 metafile = true
 
 [[files]]
@@ -117,5 +137,5 @@ metafile = true
 
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
-hash = "97658372a06b324c2121668e350cd27b02428db882f7f4943182aeef3f4cca75"
+hash = "6b100c6847b82f48ac150816c2e9ce8fd590a4dc92a49e38634b7f6c6b5a2e71"
 metafile = true
