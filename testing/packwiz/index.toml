@@ -1,0 +1,56 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
+metafile = true
+
+[[files]]
+file = "mods/copycats.pw.toml"
+hash = "bf463928645c586cb57a4e02533ee300af3931cf9db9233dae7efc1826643d41"
+metafile = true
+
+[[files]]
+file = "mods/create-jetpack.pw.toml"
+hash = "1d8fce350ce2671f24579691c47bc178ee7b644751ecec5f068427058de0cd2b"
+metafile = true
+
+[[files]]
+file = "mods/create-railways-navigator.pw.toml"
+hash = "36ca424432226ba50961b9a9a9e8a9b97e3a76763c9d82ce7c5492b0822cefc0"
+metafile = true
+
+[[files]]
+file = "mods/create-trainutilities.pw.toml"
+hash = "70f4abe6b7351bab4fa130e15eac677e01a87ac4ab0348150590227de8343884"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "f36d13fe08a755712437ae38d4a339af7a73003152a8d3638984a11964fd83ae"
+metafile = true
+
+[[files]]
+file = "mods/dragonlib.pw.toml"
+hash = "7f37f1846f25e9c4e9297ba1e06fe81584145f466eb5b3e45940717b0aeb3bbb"
+metafile = true
+
+[[files]]
+file = "mods/escalated.pw.toml"
+hash = "e79856a2e2cee31d7d0c9476b87a7f3fa99ed05c863b3372dc12171cc2b6bdfd"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "44abae510395f12f9ea97b8296b2f72e25f18b9f3f2cc0ee42c0d9afd73fe0b3"
+metafile = true
+
+[[files]]
+file = "mods/lightmans-currency.pw.toml"
+hash = "00beec97b7f607daeaec1f8596fccfcd845a6a6d922a12275e9055eb9d69e0cf"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "6b100c6847b82f48ac150816c2e9ce8fd590a4dc92a49e38634b7f6c6b5a2e71"
+metafile = true
