@@ -1,13 +1,13 @@
 name = "Create Slice & Dice"
-filename = "sliceanddice-forge-4.2.2.jar"
+filename = "sliceanddice-forge-4.1.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "980f26c4ed2b077462950e1710d28c0b6af7aecd"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/GmjmRQ0A/versions/xr8JQiiT/sliceanddice-forge-4.1.2.jar"
+hash-format = "sha512"
+hash = "70f8d1cd7af0fc548d38dda5b0a77a82beac0f2fff9cb2f3606d5d442cdc27f67410ceb128d78d4a0430551182d9e73936eaedc445e5303d710c1ff05d444e8d"
 
 [update]
-[update.curseforge]
-file-id = 7162937
-project-id = 659674
+[update.modrinth]
+mod-id = "GmjmRQ0A"
+version = "xr8JQiiT"

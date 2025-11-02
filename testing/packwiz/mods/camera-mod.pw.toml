@@ -1,0 +1,13 @@
+name = "Camera Mod"
+filename = "camera-neoforge-1.21.1-1.0.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b539774b7d1e9da8976e81d1eca8ae6d53f26204"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6715623
+project-id = 289310

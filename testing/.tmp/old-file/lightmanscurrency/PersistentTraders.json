@@ -1,0 +1,71 @@
+{
+  "Traders": [
+    {
+      "Type": "lightmanscurrency:item_trader_ticket",
+      "Name": "民成駅 券売機 1号機",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "lightmanscurrency:ticket",
+            "Count": 1,
+            "Tag": "{TicketID:[I;1423606285,1673805997,-1575872293,-736989366]}"
+          },
+          "Price": [
+            {
+              "Coin": "lightmanscurrency:coin_gold",
+              "Count": 1
+            }
+          ]
+        }
+      ],
+      "ID": "trader_1",
+      "OwnerName": ""
+    },
+    {
+      "Type": "lightmanscurrency:item_trader_ticket",
+      "Name": "Trader",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "lightmanscurrency:ticket",
+            "Count": 1,
+            "Tag": "{TicketID:[I;1423606285,1673805997,-1575872293,-736989366]}"
+          },
+          "Price": [
+            {
+              "Coin": "lightmanscurrency:coin_gold",
+              "Count": 1
+            }
+          ]
+        }
+      ],
+      "ID": "trader_2",
+      "OwnerName": ""
+    },
+    {
+      "Type": "lightmanscurrency:item_trader_ticket",
+      "Name": "Trader",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "lightmanscurrency:ticket",
+            "Count": 1,
+            "Tag": "{TicketID:[I;1423606285,1673805997,-1575872293,-736989366]}"
+          },
+          "Price": [
+            {
+              "Coin": "lightmanscurrency:coin_gold",
+              "Count": 1
+            }
+          ]
+        }
+      ],
+      "ID": "trader_3",
+      "OwnerName": ""
+    }
+  ],
+  "Auctions": []
+}

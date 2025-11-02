@@ -4,23 +4,28 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "127.0.0.1:25565:25565"
+        - "127.0.0.1:25565:25565"
     environment:
-      EULA: "TRUE"
-      SERVER_NAME: "どな鯖testing"
-      TYPE: NEOFORGE
-      NEOFORGE_VERSION: 21.1.213
-      VERSION: "1.21.1"
-      DIFFICULTY: "hard"
-      ALLOW_FLIGHT: TRUE
-      MODE: survival
-      MAX_PLAYERS: 30
-      ENABLE_COMMAND_BLOCK: false
-      FORCE_GAMEMODE: false
-      PACKWIZ_URL: "https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/main/testing/packwiz/pack.toml"
-      RCON_PASSWORD: "testing"
+        EULA: "TRUE"
+        SERVER_NAME: "どな鯖testing"
+        TYPE: NEOFORGE
+        NEOFORGE_VERSION: 21.1.213
+        VERSION: "1.21.1"
+        DIFFICULTY: "hard"
+        ALLOW_FLIGHT: TRUE
+        MODE: survival
+        MAX_PLAYERS: 30
+        ENABLE_COMMAND_BLOCK: false
+        # MOD関係
+        FORCE_GAMEMODE: false
+        PACKWIZ_URL: "https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/main/testing/packwiz/pack.toml"
+        COPY_CONFIG_DEST: /data/config # configコピー先
+        RCON_PASSWORD: "testing"
+        LEVEL_TYPE: large_biomes # 地形生成オプション
+
     volumes:
       - ./data:/data:Z
+      - ./config:/config:ro
     networks:
       server:
         ipv4_address: 172.30.0.2
