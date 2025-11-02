@@ -22,6 +22,8 @@ services:
         COPY_CONFIG_DEST: /data/config # configコピー先
         RCON_PASSWORD: "testing"
         LEVEL_TYPE: large_biomes # 地形生成オプション
+        # マシンスペック
+        MEMORY: 6G
 
     volumes:
       - ./data:/data:Z
