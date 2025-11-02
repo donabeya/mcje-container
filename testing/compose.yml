@@ -22,8 +22,9 @@ services:
         COPY_CONFIG_DEST: /data/config # configコピー先
         RCON_PASSWORD: "testing"
         LEVEL_TYPE: large_biomes # 地形生成オプション
-        # マシンスペック
+        # Java
         MEMORY: 6G
+        LOG_TIMESTAMP: true
 
     volumes:
       - ./data:/data:Z
@@ -38,4 +39,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.30.0.0/24
+        - subnet: 172.30.0.0/16
