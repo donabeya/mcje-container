@@ -19,7 +19,8 @@ services:
         ENABLE_COMMAND_BLOCK: false
         # MOD関係
         FORCE_GAMEMODE: false
-        PACKWIZ_URL: "https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/main/testing/packwiz/pack.toml"
+        # develop
+        PACKWIZ_URL: "https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/packwiz/pack.toml"
         COPY_CONFIG_DEST: /data/config # configコピー先
         RCON_PASSWORD: "testing"
         LEVEL_TYPE: large_biomes # 地形生成オプション
