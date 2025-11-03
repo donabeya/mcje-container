@@ -1,0 +1,13 @@
+name = "Prometheus Exporter"
+filename = "Prometheus-Exporter-1.21.1-neoforge-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9942bd40a05c391386c0ff057d78d69a9fc8df15"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5657655
+project-id = 351938
