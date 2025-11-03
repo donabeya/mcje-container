@@ -5,6 +5,7 @@ services:
     stdin_open: true
     ports:
         - "127.0.0.1:25565:25565"
+        - "24454:24454"
     environment:
         EULA: "TRUE"
         SERVER_NAME: "どな鯖testing"
@@ -18,10 +19,14 @@ services:
         ENABLE_COMMAND_BLOCK: false
         # MOD関係
         FORCE_GAMEMODE: false
-        PACKWIZ_URL: "https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/main/testing/packwiz/pack.toml"
+        # develop
+        PACKWIZ_URL: "https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/packwiz/pack.toml"
         COPY_CONFIG_DEST: /data/config # configコピー先
         RCON_PASSWORD: "testing"
         LEVEL_TYPE: large_biomes # 地形生成オプション
+        # Java
+        MEMORY: 6G
+        LOG_TIMESTAMP: true
 
     volumes:
       - ./data:/data:Z
@@ -36,4 +41,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.30.0.0/24
+        - subnet: 172.30.0.0/16

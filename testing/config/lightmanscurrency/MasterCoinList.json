@@ -29,8 +29,11 @@
       "name": {
         "translate": "lightmanscurrency.money.chain.main"
       },
-      "displayType": "lightmanscurrency:coin",
-      "InputType": "DEFAULT",
+      "displayType": "lightmanscurrency:number",
+      "displayFormat": {
+        "text":"{value}コイン"
+      },
+      "InputType": "TEXT",
       "CoreChain": [
         {
           "Coin": "lightmanscurrency:coin_copper",
