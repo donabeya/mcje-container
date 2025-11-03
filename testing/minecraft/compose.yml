@@ -1,0 +1,68 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - 127.0.0.1:25565:25565
+      - '24454:24454'
+      - '19565:19565'
+    volumes:
+      - ./data:/data:Z
+      - ./config:/config:ro
+    environment:
+      EULA: 'TRUE'
+      SERVER_NAME: どな鯖testing
+      TYPE: NEOFORGE
+      NEOFORGE_VERSION: 21.1.213
+      VERSION: 1.21.1
+      DIFFICULTY: hard
+      ALLOW_FLIGHT: true
+      MODE: survival
+      MAX_PLAYERS: 30
+      ENABLE_COMMAND_BLOCK: false
+      FORCE_GAMEMODE: false
+      PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/packwiz/pack.toml
+      COPY_CONFIG_DEST: /data/config
+      RCON_PASSWORD: testing
+      LEVEL_TYPE: large_biomes
+      MEMORY: 6G
+      LOG_TIMESTAMP: true
+    networks:
+      server:
+        ipv4_address: 10.55.0.2
+
+  grafana:
+    image: grafana/grafana:main
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./grafana/storage:/var/lib/grafana
+    networks:
+      web-console:
+        ipv4_address: 10.56.0.2
+
+  prometheus:
+    image: prom/prometheus:main
+    ports:
+      - 127.0.0.1:9090:9090
+    volumes:
+      - rometheus/data:/prometheus
+    networks:
+      server:
+        ipv4_address: 10.55.0.3
+      web-console:
+        ipv4_address: 10.56.0.3
+
+networks:
+  server:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.55.0.0/16
+  web-console:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.56.0.0/16
