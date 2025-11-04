@@ -20,7 +20,7 @@ services:
       MAX_PLAYERS: 30
       ENABLE_COMMAND_BLOCK: false
       FORCE_GAMEMODE: false
-      PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/packwiz/pack.toml
+      PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/minecraft/packwiz/pack.toml
       COPY_CONFIG_DEST: /data/config
       RCON_PASSWORD: testing
       LEVEL_TYPE: large_biomes
@@ -41,7 +41,7 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.3
-    user: $PID:$GID
+    user: root
 
   prometheus:
     image: prom/prometheus:main
