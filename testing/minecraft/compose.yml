@@ -8,6 +8,7 @@ services:
     volumes:
       - ./data:/data:Z
       - ./config:/config:ro
+      - /etc/localtime:/etc/localtime:ro
     environment:
       EULA: 'TRUE'
       SERVER_NAME: どな鯖testing
@@ -18,14 +19,18 @@ services:
       ALLOW_FLIGHT: true
       MODE: survival
       MAX_PLAYERS: 30
-      ENABLE_COMMAND_BLOCK: false
+      ENABLE_COMMAND_BLOCK: true
       FORCE_GAMEMODE: false
       PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/minecraft/packwiz/pack.toml
       COPY_CONFIG_DEST: /data/config
       RCON_PASSWORD: testing
       LEVEL_TYPE: large_biomes
-      MEMORY: 6G
+      INIT_MEMORY: 1G
       LOG_TIMESTAMP: true
+      ENABLE_ROLLING_LOGS: true
+      SNOOPER_ENABLED: false
+      VIEW_DISTANCE: 16
+
     networks:
       server:
         ipv4_address: 10.55.0.2
