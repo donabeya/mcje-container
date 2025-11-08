@@ -1,0 +1,70 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - '25565:25565'
+      - '24454:24454'
+      - 127.0.0.1:19565:19565
+    volumes:
+      - ./data:/data:Z
+      - ./config:/config:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      EULA: 'TRUE'
+      SERVER_NAME: どな鯖testing
+      TYPE: NEOFORGE
+      NEOFORGE_VERSION: 21.1.213
+      VERSION: 1.21.1
+      DIFFICULTY: hard
+      ALLOW_FLIGHT: true
+      MODE: survival
+      MAX_PLAYERS: 30
+      ENABLE_COMMAND_BLOCK: true
+      FORCE_GAMEMODE: false
+      PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/minecraft/packwiz/pack.toml
+      COPY_CONFIG_DEST: /data/config
+      RCON_PASSWORD: testing
+      LEVEL_TYPE: large_biomes
+      INIT_MEMORY: 1G
+      LOG_TIMESTAMP: true
+      ENABLE_ROLLING_LOGS: true
+      SNOOPER_ENABLED: false
+      VIEW_DISTANCE: 16
+
+    networks:
+      server:
+        ipv4_address: 10.55.0.2
+
+  grafana:
+    image: grafana/grafana:main
+    depends_on:
+      - prometheus
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./grafana/data:/var/lib/grafana
+    networks:
+      server:
+        ipv4_address: 10.55.0.3
+    user: root
+
+  prometheus:
+    image: prom/prometheus:main
+    ports:
+      - 127.0.0.1:9090:9090
+    volumes:
+      - ./prometheus/data:/prometheus
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      server:
+        ipv4_address: 10.55.0.4
+    user: '1000:1000'
+
+networks:
+  server:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.55.0.0/16
+          gateway: 10.55.0.1

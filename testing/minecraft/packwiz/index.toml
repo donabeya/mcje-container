@@ -11,11 +11,6 @@ hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
 metafile = true
 
 [[files]]
-file = "mods/beltborne-lanterns.pw.toml"
-hash = "7bc3f592bdca4665cb48ae73c20b891cb272747c64aa5f63e8a93ed1a044d1f5"
-metafile = true
-
-[[files]]
 file = "mods/caelus.pw.toml"
 hash = "86cf2ae835b8f3d981af2e88a4d19fdc3dc4f5aa3904c6ba30e25d77d3e9fcbb"
 metafile = true
@@ -23,11 +18,6 @@ metafile = true
 [[files]]
 file = "mods/camera-mod.pw.toml"
 hash = "c05be737eb2e1fc7e611694f1295f070fc7fd1088cfae396aa1d3c884fc9f38e"
-metafile = true
-
-[[files]]
-file = "mods/cloth-config.pw.toml"
-hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
 metafile = true
 
 [[files]]
@@ -188,6 +178,11 @@ metafile = true
 [[files]]
 file = "mods/noisium.pw.toml"
 hash = "c39f473bc613a79aaf8717ced14f9e081451118cd53521ac5d6e6cdd469a3f59"
+metafile = true
+
+[[files]]
+file = "mods/prometheus-exporter.pw.toml"
+hash = "4033f9d39c46d85f9ba0dbef78a11d809af83cc1046c362b05aa5d04ea35b6a5"
 metafile = true
 
 [[files]]

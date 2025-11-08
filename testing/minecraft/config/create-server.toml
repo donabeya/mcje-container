@@ -404,7 +404,7 @@
 	#Maximum distance in blocks a Mechanical Arm can reach across.
 	# Default: 5
 	# Range: > 1
-	mechanicalArmRange = 5
+	mechanicalArmRange = 10
 	#.
 	#Maximum distance in blocks a Package Port can be placed at from its target.
 	# Default: 5
@@ -419,7 +419,7 @@
 	#Maximum possible distance in blocks between display links and their target.
 	# Default: 64
 	# Range: > 1
-	displayLinkRange = 64
+	displayLinkRange = 256
 	#.
 	#The total amount of stacks a vault can hold per block in size.
 	# Default: 20
@@ -539,7 +539,7 @@
 	#Maximum length of track that can be placed as one batch or turn.
 	# Default: 32
 	# Range: 16 ~ 128
-	maxTrackPlacementLength = 32
+	maxTrackPlacementLength = 128
 	#.
 	#Maximum length of a Train Stations' assembly track.
 	# Default: 128
