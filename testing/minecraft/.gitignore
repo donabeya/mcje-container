@@ -1,3 +1,5 @@
 minecraft-data/
 grafana/data/
 prometheus/data/
+config/rclone/
+backups/

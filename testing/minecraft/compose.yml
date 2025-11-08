@@ -3,7 +3,7 @@ services:
     image: itzg/minecraft-server
     ports:
       - '25565:25565'
-      - '24454:24454'
+      - '24454:24454/udp'
       - 127.0.0.1:19565:19565
     volumes:
       - ./minecraft-data:/data:Z
@@ -26,6 +26,7 @@ services:
       RCON_PASSWORD: testing
       LEVEL_TYPE: large_biomes
       INIT_MEMORY: 1G
+      MAX_MEMORY: 6G
       LOG_TIMESTAMP: true
       ENABLE_ROLLING_LOGS: true
       SNOOPER_ENABLED: false
@@ -34,6 +35,29 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.2
+
+  backup:
+    image: itzg/mc-backup
+    depends_on:
+      - mc
+    environment:
+      BACKUP_INTERVAL: "24h"
+      RCON_HOST: mc
+      RCON_PASSWORD: testing
+      PRUNE_BACKUPS_DAYS: 14
+      BACKUP_METHOD: rclone
+      RCLONE_REMOTE: "backup_test"
+      RCLONE_COMPRESS_METHOD: gzip
+      DEST_DIR: ./backups
+      RCLONE_DEST_DIR: /neoforge_backup
+    networks:
+      server:
+        ipv4_address: 10.55.0.5
+    user: root
+    volumes:
+      - ./config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
+
+
 
   grafana:
     image: grafana/grafana:main
