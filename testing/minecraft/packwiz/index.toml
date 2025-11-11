@@ -196,6 +196,11 @@ hash = "c39f473bc613a79aaf8717ced14f9e081451118cd53521ac5d6e6cdd469a3f59"
 metafile = true
 
 [[files]]
+file = "mods/ping-wheel.pw.toml"
+hash = "573f309a1bd1c410d149b6830aeddee7313e0698ac249a94f63a7e95c0eb146e"
+metafile = true
+
+[[files]]
 file = "mods/prometheus-exporter.pw.toml"
 hash = "4033f9d39c46d85f9ba0dbef78a11d809af83cc1046c362b05aa5d04ea35b6a5"
 metafile = true
