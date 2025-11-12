@@ -1,19 +1,18 @@
 # mcje-container
 
-サーバー実行環境
+どな鯖のマイクラ実行環境
 
 # 実行
+### 1. rcloneの設定
+- リンク 👉 [https://rclone.org/remote_setup/](https://rclone.org/remote_setup/)
 
-## rcloneの設定
-1. [https://rclone.org/remote_setup/](https://rclone.org/remote_setup/)
-
-
+### 2. コンテナ立ち上げ
 ```bash
 cd release/minecraft
 sudo podman compose up -d
 ```
 
-# リアルタイムで監視
+# 監視とコマンド
 ```bash
 # ログ
 sudo podman compose logs --follow
@@ -23,13 +22,16 @@ sudo podman exec -i testing-mc-1 rcon-cli
 
 # システム
 
-![構成図](/image/minecraft.svg)
+## デプロイ環境
+- WIKI参照 👉 [https://github.com/donabeya/mcje-docs/wiki/WIP:-server](https://github.com/donabeya/mcje-docs/wiki/WIP:-server)
 
+## つりー🌲
 ```
 release/testing
 ├── minecraft
 │   ├── backups バックアップファイルの一時置き場
 │   ├── config 設定ファイル置き場
+│   │   ├── grafana ダッシュボード、アラートの設定
 │   │   ├── mod マイクラサーバーのMOD設定ファイル
 │   │   └── rclone
 │   ├── grafana
@@ -40,6 +42,13 @@ release/testing
 └── garage *現在未使用
 ```
 
-# Author
+## 構成図
+![構成図](/image/minecraft.svg)
 
-- donabe8898
+# Contributor
+
+- インフラ担当大臣: [donabe8898](https://github.com/donabe8898)
+
+- Mod担当大臣: zyashin0319
+
+- ユーモア担当大臣: noriben0141
