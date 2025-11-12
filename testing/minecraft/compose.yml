@@ -27,7 +27,7 @@ services:
       RCON_PASSWORD: testing
       LEVEL_TYPE: large_biomes
       INIT_MEMORY: 1G
-      MAX_MEMORY: 6G
+      MAX_MEMORY: 10G
       LOG_TIMESTAMP: true
       ENABLE_ROLLING_LOGS: true
       SNOOPER_ENABLED: false
