@@ -81,6 +81,11 @@ hash = "1d0631fcb492d7f5e5172b2ef67152ca630b4605979af34e6e6f85fc80c53e41"
 metafile = true
 
 [[files]]
+file = "mods/enchantment-disabler.pw.toml"
+hash = "9abdd0b75ef75d7c6d771542d35f5e5d4ee0ba1a599feea760d61247d98f0406"
+metafile = true
+
+[[files]]
 file = "mods/escalated.pw.toml"
 hash = "e79856a2e2cee31d7d0c9476b87a7f3fa99ed05c863b3372dc12171cc2b6bdfd"
 metafile = true
@@ -101,6 +106,11 @@ hash = "3944c175d3409b2db40630cdc0be1cad181009cc3c20c925328cb9b04bea0108"
 metafile = true
 
 [[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "11c4ac6932c14f3ad5a2c63d7f39eee1e9a2a91ffc079d5bd917c9aa381abdfb"
+metafile = true
+
+[[files]]
 file = "mods/gui-clock.pw.toml"
 hash = "02869b519bf4246e855e6ec3aa3737e063ec2ebbe0c63074007d837a0a455744"
 metafile = true
@@ -113,6 +123,11 @@ metafile = true
 [[files]]
 file = "mods/immersive-aircraft.pw.toml"
 hash = "e01a9920aa95f8bcea40bf8e56eb4fbc43b9f554375fd58d86537d3b7e19c943"
+metafile = true
+
+[[files]]
+file = "mods/inv-view-forge.pw.toml"
+hash = "a40e68d8848a871a5d53ebbc5c73db8cc1dfe76273a6bcef2a0e0d4d8b9299d8"
 metafile = true
 
 [[files]]
@@ -178,6 +193,11 @@ metafile = true
 [[files]]
 file = "mods/noisium.pw.toml"
 hash = "c39f473bc613a79aaf8717ced14f9e081451118cd53521ac5d6e6cdd469a3f59"
+metafile = true
+
+[[files]]
+file = "mods/ping-wheel.pw.toml"
+hash = "573f309a1bd1c410d149b6830aeddee7313e0698ac249a94f63a7e95c0eb146e"
 metafile = true
 
 [[files]]

@@ -31,7 +31,8 @@ services:
       LOG_TIMESTAMP: true
       ENABLE_ROLLING_LOGS: true
       SNOOPER_ENABLED: false
-      VIEW_DISTANCE: 16
+      VIEW_DISTANCE: 24
+      SPAWN_PROTECTION: 0
     networks:
       server:
         ipv4_address: 10.55.0.2
