@@ -4,15 +4,21 @@
 
 # 実行
 
+## rcloneの設定
+1. [https://rclone.org/remote_setup/](https://rclone.org/remote_setup/)
+
+
 ```bash
-cd ./testing
-podman compose up -d
+cd release/minecraft
+sudo podman compose up -d
 ```
 
-## RCON
+# リアルタイムで監視
 ```bash
+# ログ
+sudo podman compose logs --follow
+# RCON
 sudo podman exec -i testing-mc-1 rcon-cli
-> #ここでコマンド実行
 ```
 
 # システム
