@@ -1,0 +1,13 @@
+name = "Inv View Forge/NeoForge"
+filename = "inv_view_neoforge-3.0.2-1.21.(5).jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/RXM1nxge/versions/j2qRgotc/inv_view_neoforge-3.0.2-1.21.%285%29.jar"
+hash-format = "sha512"
+hash = "8f787b4d713fb008cf1eaa8f9a9375cc640af034fff036e227b0cf21a7852fa0783e40f6e26f21bd40c78aa4ec2b87220074c140b0a6bc2b833eb14fbe5f7075"
+
+[update]
+[update.modrinth]
+mod-id = "RXM1nxge"
+version = "j2qRgotc"
