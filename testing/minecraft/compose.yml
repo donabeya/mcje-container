@@ -43,13 +43,15 @@ services:
             - mc
         volumes:
             - ./config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
+            - ./minecraft-data:/data:ro
+            - ./backups:/backups
         environment:
             BACKUP_INTERVAL: 24h
             RCON_HOST: mc
             RCON_PASSWORD: testing
             PRUNE_BACKUPS_DAYS: 14
             BACKUP_METHOD: rclone
-            RCLONE_REMOTE: donasava
+            RCLONE_REMOTE: rclone-testing
             RCLONE_COMPRESS_METHOD: gzip
             DEST_DIR: ./backups
             RCLONE_DEST_DIR: /neoforge_backup
