@@ -27,12 +27,12 @@ services:
       COPY_CONFIG_DEST: /data/config
       RCON_PASSWORD: testing
       LEVEL_TYPE: large_biomes
-      INIT_MEMORY: 4G
+      INIT_MEMORY: 6G
       MAX_MEMORY: 11G
       LOG_TIMESTAMP: true
       ENABLE_ROLLING_LOGS: true
       SNOOPER_ENABLED: false
-      VIEW_DISTANCE: 16
+      VIEW_DISTANCE: 20
       SPAWN_PROTECTION: 0
       USE_AIKAR_FLAGS: true
       USE_MEOWICE_FLAGS: true
