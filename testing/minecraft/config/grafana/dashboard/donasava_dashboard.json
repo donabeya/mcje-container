@@ -163,7 +163,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef3id6ddqbf9ca"
+        "uid": "af6a2ezwydf5sc"
       },
       "fieldConfig": {
         "defaults": {
@@ -250,7 +250,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ef3id6ddqbf9ca"
+            "uid": "af6a2ezwydf5sc"
           },
           "expr": "up{application=\"$application\", instance=\"$instance\"}",
           "format": "time_series",
@@ -1132,7 +1132,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ef3id6ddqbf9ca"
+        "uid": "af6a2ezwydf5sc"
       },
       "fieldConfig": {
         "defaults": {
@@ -2952,7 +2952,7 @@
       {
         "current": {
           "text": "prometheus",
-          "value": "ef3id6ddqbf9ca"
+          "value": "af6a2ezwydf5sc"
         },
         "includeAll": false,
         "name": "datasource",
@@ -2969,7 +2969,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "ef3id6ddqbf9ca"
+          "uid": "af6a2ezwydf5sc"
         },
         "definition": "label_values(mc_dimension_chunks_loaded, application)",
         "includeAll": false,
@@ -2990,7 +2990,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "ef3id6ddqbf9ca"
+          "uid": "af6a2ezwydf5sc"
         },
         "definition": "label_values(mc_dimension_chunks_loaded{application=\"$application\"}, instance)",
         "includeAll": false,
