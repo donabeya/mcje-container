@@ -18,6 +18,8 @@ sudo podman compose up -d
 sudo podman compose logs --follow
 # RCON
 sudo podman exec -i testing-mc-1 rcon-cli
+# 今すぐバックアップ
+sudo docker exec buckup buckup now
 ```
 
 # システム
