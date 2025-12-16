@@ -167,7 +167,7 @@ metafile = true
 
 [[files]]
 file = "mods/lightmans-currency.pw.toml"
-hash = "00beec97b7f607daeaec1f8596fccfcd845a6a6d922a12275e9055eb9d69e0cf"
+hash = "fff9c50f6c1ddec7fb1337d9da73f3b5e62abc1d99957f7f38b401dfee958d66"
 metafile = true
 
 [[files]]
