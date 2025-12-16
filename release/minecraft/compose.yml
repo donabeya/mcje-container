@@ -23,7 +23,7 @@ services:
       MAX_PLAYERS: 30
       ENABLE_COMMAND_BLOCK: true
       FORCE_GAMEMODE: false
-      PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/develop/testing/minecraft/packwiz/pack.toml
+      PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/main/release/minecraft/packwiz/pack.toml
       COPY_CONFIG_DEST: /data/config
       RCON_PASSWORD: testing
       LEVEL_TYPE: large_biomes
