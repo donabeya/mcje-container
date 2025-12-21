@@ -1,5 +1,6 @@
 services:
     mc:
+        container_name: mc
         image: docker.io/itzg/minecraft-server:java25
         ports:
             - '25565:25565'
@@ -42,6 +43,7 @@ services:
         cpuset: 3,4,5,9,10,11
 
     backup:
+        container_name: backup
         image: docker.io/itzg/mc-backup
         depends_on:
             - mc
@@ -66,6 +68,7 @@ services:
         user: root
 
     grafana:
+        container_name: grafana
         image: docker.io/grafana/grafana:main
         depends_on:
             - prometheus
@@ -80,6 +83,7 @@ services:
         user: root
 
     prometheus:
+        container_name: prometheus
         image: docker.io/prom/prometheus:main
         ports:
             - 127.0.0.1:9090:9090
