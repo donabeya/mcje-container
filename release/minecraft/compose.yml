@@ -39,6 +39,7 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.2
+    cpuset: "4-7"
 
   backup:
     image: itzg/mc-backup
@@ -62,6 +63,7 @@ services:
       server:
         ipv4_address: 10.55.0.5
     user: root
+    cpuset: "2"
 
   grafana:
     image: grafana/grafana:main
@@ -75,6 +77,7 @@ services:
       server:
         ipv4_address: 10.55.0.3
     user: root
+    cpuset: "1"
 
   prometheus:
     image: prom/prometheus:main
@@ -87,6 +90,7 @@ services:
       server:
         ipv4_address: 10.55.0.4
     user: root
+    cpuset: "1"
 
 networks:
   server:
