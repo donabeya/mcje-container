@@ -81,6 +81,11 @@ hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
 
 [[files]]
+file = "mods/day-length.pw.toml"
+hash = "52e803ec08d89e5e5ac1ca2701ffce38e122b00d2c1ddb87bb10f3663a58efe4"
+metafile = true
+
+[[files]]
 file = "mods/dragonlib.pw.toml"
 hash = "7f37f1846f25e9c4e9297ba1e06fe81584145f466eb5b3e45940717b0aeb3bbb"
 metafile = true
