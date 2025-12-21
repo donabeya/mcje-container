@@ -3,11 +3,11 @@ filename = "day_length-2.0.0-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/MrMHdkQ6/versions/PqpVkAkG/day_length-2.0.0-neoforge-1.21.1.jar"
-hash-format = "sha512"
-hash = "beb9d4d1ffa5644ccca82f6d95fac07b6b342214613f0d68b7ddc5a1e2c5e896e49e964d89ecfc2accb23da0ed4ba04aa1168a4ddf3f15b3f051af266e3dcc25"
+hash-format = "sha1"
+hash = "e06309d7d03b9e9bc45abbef69a3860f82a75463"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "MrMHdkQ6"
-version = "PqpVkAkG"
+[update.curseforge]
+file-id = 6681867
+project-id = 837167
