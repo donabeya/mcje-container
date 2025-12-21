@@ -25,7 +25,7 @@ services:
       FORCE_GAMEMODE: false
       PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/mcje-container/refs/heads/main/release/minecraft/packwiz/pack.toml
       COPY_CONFIG_DEST: /data/config
-      RCON_PASSWORD: testing
+      RCON_PASSWORD: samidare44
       LEVEL_TYPE: large_biomes
       INIT_MEMORY: 6G
       MAX_MEMORY: 11G
@@ -49,9 +49,9 @@ services:
       - ./minecraft-data:/data:ro
       - ./backups:/backups
     environment:
-      BACKUP_INTERVAL: 24h
+      BACKUP_INTERVAL: 48h
       RCON_HOST: mc
-      RCON_PASSWORD: testing
+      RCON_PASSWORD: samidare44
       PRUNE_BACKUPS_DAYS: 14
       BACKUP_METHOD: rclone
       RCLONE_REMOTE: donasava
