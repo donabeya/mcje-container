@@ -1,6 +1,6 @@
 services:
     mc:
-        image: itzg/minecraft-server:java25
+        image: docker.io/itzg/minecraft-server:java25
         ports:
             - '25565:25565'
             - 24454:24454/udp
@@ -39,10 +39,10 @@ services:
         networks:
             server:
                 ipv4_address: 10.55.0.2
-        cpuset: "3,4,5,9,10,11"
+        cpuset: 3,4,5,9,10,11
 
     backup:
-        image: itzg/mc-backup
+        image: docker.io/itzg/mc-backup
         depends_on:
             - mc
         volumes:
@@ -62,11 +62,11 @@ services:
         networks:
             server:
                 ipv4_address: 10.55.0.5
+        cpuset: 1,7
         user: root
-        cpuset: "1,7"
 
     grafana:
-        image: grafana/grafana:main
+        image: docker.io/grafana/grafana:main
         depends_on:
             - prometheus
         ports:
@@ -76,11 +76,11 @@ services:
         networks:
             server:
                 ipv4_address: 10.55.0.3
+        cpuset: 2,8
         user: root
-        cpuset: "2,8"
 
     prometheus:
-        image: prom/prometheus:main
+        image: docker.io/prom/prometheus:main
         ports:
             - 127.0.0.1:9090:9090
         volumes:
@@ -89,8 +89,8 @@ services:
         networks:
             server:
                 ipv4_address: 10.55.0.4
+        cpuset: 2,8
         user: root
-        cpuset: "2,8"
 
 networks:
     server:
