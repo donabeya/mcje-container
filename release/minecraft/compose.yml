@@ -53,7 +53,7 @@ services:
             - ./backups:/backups
         environment:
             BACKUP_INTERVAL: 48h
-            RCON_HOST: 10.55.0.2
+            RCON_HOST: mc
             RCON_PASSWORD: samidare44
             PRUNE_BACKUPS_DAYS: 14
             BACKUP_METHOD: rclone
