@@ -63,7 +63,7 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.5
-    cpuset: "3"
+    cpuset: "0"
     user: root
 
   grafana:
@@ -78,7 +78,7 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.3
-    cpuset: "2"
+    cpuset: "6"
     user: root
 
   prometheus:
@@ -92,7 +92,7 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.4
-    cpuset: "2"
+    cpuset: "6"
     user: root
 
 networks:
