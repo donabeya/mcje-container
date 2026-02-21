@@ -461,7 +461,7 @@
 	#The maximum allowed file size of uploaded Schematics.
 	# Default: 256
 	# Range: > 16
-	maxTotalSchematicSize = 256
+	maxTotalSchematicSize = 2048
 	#.
 	#[in Bytes]
 	#The maximum packet size uploaded Schematics are split into.
