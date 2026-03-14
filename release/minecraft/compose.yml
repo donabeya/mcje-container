@@ -1,4 +1,13 @@
 services:
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    ports:
+      - "8080:80"
+    volumes:
+      - ./config/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+    restart: unless-stopped
+
   mc:
     container_name: mc
     image: docker.io/itzg/minecraft-server:java25

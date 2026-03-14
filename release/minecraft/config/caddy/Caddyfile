@@ -1,0 +1,11 @@
+:80 {
+
+    handle_path /map* {
+        reverse_proxy localhost:8100
+    }
+
+    handle_path /grafana* {
+        reverse_proxy localhost:3000
+    }
+
+}
