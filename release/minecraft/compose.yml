@@ -80,6 +80,9 @@ services:
     networks:
       server:
         ipv4_address: 10.55.0.3
+    environment:
+      - GF_SERVER_ROOT_URL=https:https://nexus.tailf2b158.ts.net/grafana
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
     cpuset: "1"
     user: root
 
