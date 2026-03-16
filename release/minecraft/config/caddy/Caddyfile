@@ -1,6 +1,6 @@
 :80 {
 
-    handle /map/* {
+    handle_path /map/* {
         reverse_proxy mc:8100
     }
 
