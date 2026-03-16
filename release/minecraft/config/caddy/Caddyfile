@@ -1,10 +1,10 @@
 :80 {
 
-    handle_path /map/* {
+    handle /map/* {
         reverse_proxy mc:8100
     }
 
-    handle_path /grafana/* {
+    handle /grafana/* {
         reverse_proxy grafana:3000
     }
 
