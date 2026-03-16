@@ -7,6 +7,9 @@ services:
         volumes:
             - ./config/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
         restart: unless-stopped
+        networks:
+            server:
+                ipv4_address: 10.55.0.6
 
     mc:
         container_name: mc
