@@ -53,30 +53,30 @@ services:
             server:
                 ipv4_address: 10.56.0.2
 
-    # backup:
-    #     container_name: backup
-    #     image: docker.io/itzg/mc-backup
-    #     depends_on:
-    #         - mc
-    #     volumes:
-    #         - ./config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
-    #         - ./minecraft-data/world:/data:ro
-    #         - ./backups:/backups
-    #     environment:
-    #         BACKUP_INTERVAL: 48h
-    #         RCON_HOST: mc
-    #         RCON_PASSWORD: samidare44
-    #         PRUNE_BACKUPS_DAYS: 14
-    #         BACKUP_METHOD: rclone
-    #         RCLONE_REMOTE: donasava
-    #         RCLONE_COMPRESS_METHOD: gzip
-    #         DEST_DIR: ./backups
-    #         RCLONE_DEST_DIR: /neoforge_backup
-    #     networks:
-    #         server:
-    #             ipv4_address: 10.56.0.5
-    #     cpuset: "0,6"
-    #     user: root
+    backup:
+        container_name: backup
+        image: docker.io/itzg/mc-backup
+        depends_on:
+            - mc
+        volumes:
+            - ./config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
+            - ./minecraft-data/world:/data:ro
+            - ./backups:/backups
+        environment:
+            BACKUP_INTERVAL: 48h
+            RCON_HOST: mc
+            RCON_PASSWORD: samidare44
+            PRUNE_BACKUPS_DAYS: 14
+            BACKUP_METHOD: rclone
+            RCLONE_REMOTE: donasava
+            RCLONE_COMPRESS_METHOD: gzip
+            DEST_DIR: ./backups
+            RCLONE_DEST_DIR: /neoforge_backup
+        networks:
+            server:
+                ipv4_address: 10.56.0.5
+        cpuset: "0,6"
+        user: root
 
     grafana:
         container_name: grafana
