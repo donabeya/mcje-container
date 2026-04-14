@@ -9,7 +9,7 @@ services:
         restart: unless-stopped
         networks:
             server:
-                ipv4_address: 10.56.0.6
+                ipv4_address: 10.55.0.6
 
     mc:
         container_name: mc
@@ -51,7 +51,7 @@ services:
             USE_MEOWICE_FLAGS: true
         networks:
             server:
-                ipv4_address: 10.56.0.2
+                ipv4_address: 10.55.0.2
 
     backup:
         container_name: backup
@@ -74,7 +74,7 @@ services:
             RCLONE_DEST_DIR: /neoforge_backup
         networks:
             server:
-                ipv4_address: 10.56.0.5
+                ipv4_address: 10.55.0.5
         cpuset: "0,6"
         user: root
 
@@ -88,7 +88,7 @@ services:
             - ./grafana/data:/var/lib/grafana
         networks:
             server:
-                ipv4_address: 10.56.0.3
+                ipv4_address: 10.55.0.3
         environment:
             - GF_SERVER_ROOT_URL=https://nexus.tailf2b158.ts.net/grafana/
             - GF_SERVER_SERVE_FROM_SUB_PATH=true
@@ -106,7 +106,7 @@ services:
           - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
         networks:
           server:
-            ipv4_address: 10.56.0.4
+            ipv4_address: 10.55.0.4
         cpuset: "1"
         user: root
 
@@ -116,5 +116,5 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 10.56.0.0/16
-          gateway: 10.56.0.1
+        - subnet: 10.55.0.0/16
+          gateway: 10.55.0.1
