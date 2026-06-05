@@ -28,7 +28,7 @@ services:
             EULA: "TRUE"
             SERVER_NAME: どな鯖
             TYPE: NEOFORGE
-            NEOFORGE_VERSION: 21.1.213
+            NEOFORGE_VERSION: 21.1.233
             VERSION: 1.21.1
             DIFFICULTY: hard
             ALLOW_FLIGHT: true
@@ -36,12 +36,12 @@ services:
             MAX_PLAYERS: 30
             ENABLE_COMMAND_BLOCK: true
             FORCE_GAMEMODE: false
-            PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/packwiz/refs/heads/main/release/pack.toml
+            PACKWIZ_URL: https://raw.githubusercontent.com/donabeya/packwiz/refs/heads/issue/1-pantograph/pack.toml
             COPY_CONFIG_DEST: /data/config
             RCON_PASSWORD: samidare44
             LEVEL_TYPE: large_biomes
-            INIT_MEMORY: 6G
-            MAX_MEMORY: 11G
+            INIT_MEMORY: 3G
+            MAX_MEMORY: 6G
             LOG_TIMESTAMP: true
             ENABLE_ROLLING_LOGS: true
             SNOOPER_ENABLED: false
