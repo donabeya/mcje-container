@@ -52,7 +52,7 @@ services:
         networks:
             server:
                 ipv4_address: 10.55.0.2
-        
+
 
     backup:
         container_name: backup
