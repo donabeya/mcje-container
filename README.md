@@ -6,8 +6,11 @@
 ### 1. セットアップ
 - [ここ見てrcloneを設定](https://rclone.org/remote_setup/)
     - 設定ファイルを`config/rclone/`へコピー
-- プロジェクトルートに`backups/`, `minecraft-data/`のディレクトリを作成
+- プロジェクトルートで必須ディレクトリ作成
 
+```bash
+mkdir -p backups minecraft-data
+```
 
 ### 2. コンテナ立ち上げ
 ```bash
@@ -19,7 +22,7 @@ sudo docker compose down    # 終了
 ```bash
 sudo docker compose logs --follow           # 全コンテナのログをリアルタイムで見る
 
-sudo docker exec -i mc rcon-cli   # RCON立ち上げ
+sudo docker exec -i mc rcon-cli             # RCON立ち上げ
 
 sudo docker exec backup backup now          # 今すぐバックアップ
 ```
